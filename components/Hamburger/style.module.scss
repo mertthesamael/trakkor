@@ -1,0 +1,9 @@
+.hamburger{
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--blue-gray-600, #475569);
+    background: var(--blue-gray-700, #334155);
+}

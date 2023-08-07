@@ -1,0 +1,19 @@
+.primaryButton{
+    padding: 12px calc(12px + 1rem);
+    border-radius: 8px;
+    border: 1px solid var(--blue-gray-600, #475569);
+    background: var(--blue-gray-700, #334155);
+    font-family: inherit;
+    color: white;
+}
+
+@media (max-width: 720px) {
+    .primaryButton{
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.5px;
+    }
+}

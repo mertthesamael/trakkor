@@ -1,0 +1,17 @@
+
+
+
+body.dark{
+    --bgcolor:#0F172A;
+}
+
+body.light{
+    --bgcolor:white;
+}
+
+
+
+:root{
+    --page-format: 95%;
+}
+

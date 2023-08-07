@@ -1,0 +1,265 @@
+
+body{
+    background-color: var(--bgcolor);
+}
+
+/************************** TYPOGRAPHY **************************/
+
+/* HEADING CLASSES */
+.h1-xl{
+
+    /* Heading/1 XL */
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 140.8px */
+}
+
+.h1-l{
+
+    /* Heading/1 L */
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 105.6px */
+}
+
+.h1-m{
+
+    /* Heading/1 M */
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 79.2px */
+}
+
+.h2{
+
+    /* Heading/2 */
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 61.6px */
+}
+
+.h3{
+
+    /* Heading/3 */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 52.8px */
+}
+
+.h4{
+
+    /* Heading/4 */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 44px */
+}
+
+.h5{
+
+    /* Heading/5 */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 35.2px */
+}
+
+.h6{
+
+    /* Heading/6 */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 26.4px */
+}
+/* HEADING CLASSES */
+
+
+/* SUBTITLE CLASSES */
+.sub-xl{
+
+    /* Subtitle/XL */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 22px */
+}
+
+.sub-l{
+
+    /* Subtitle/L */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+}
+
+.sub-m{
+
+    /* Subtitle/M */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 17.6px */
+}
+
+.sub-s{
+
+    /* Subtitle/S */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 15.4px */
+}
+
+/* SUBTITLE CLASSES */
+
+
+/* BODY CLASSES */
+
+.bd-xxxl{
+
+    /* Body/XXXL */
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 51.2px */
+}
+
+.bd-xxl{
+
+    /* Body/XXL */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 38.4px */
+}
+
+.bd-xl{
+
+    /* Body/XL */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 36px */
+}
+
+.bd-l{
+
+    /* Body/L */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+}
+
+.bd-m{
+
+    /* Body/M */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+
+.bd-s{
+
+    /* Body/S */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
+
+.bd-xs{
+
+    /* Body/XS */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+}
+
+.bd-xxs{
+
+    /* Body/XXS */
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 14px */
+}
+/* BODY CLASSES */
+
+/* CAPTION CLASSES */
+
+.cp-m{
+
+    /* Caption/M */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 20px */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.cp-s{
+
+    /* Caption/S */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 16px */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* CAPTION CLASSES */
+
+/* BUTTON CLASSES */
+.btn-xl{
+
+    /* Button/XL */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 100% */
+    letter-spacing: 0.5px;
+}
+
+.btn-l{
+
+    /* Button/L */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.5px;
+}
+
+.btn-m{
+
+    /* Button/M */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.5px;
+}
+
+.btn-s{
+
+    /* Button/S */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.5px;
+}
