@@ -1,8 +1,12 @@
 
 
+:root{
+    --page-format: 95%;
+}
 
 body.dark{
     --bgcolor:#0F172A;
+    --accent:#818CF8;
 }
 
 body.light{
@@ -11,7 +15,4 @@ body.light{
 
 
 
-:root{
-    --page-format: 95%;
-}
 

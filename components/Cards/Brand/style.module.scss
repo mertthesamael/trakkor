@@ -1,0 +1,12 @@
+.brandCard{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    &__name{
+
+        & h2{
+            color: #CBD5E1;
+        }
+    }
+}

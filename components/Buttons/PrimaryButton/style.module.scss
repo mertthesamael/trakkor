@@ -1,3 +1,4 @@
+@use "../../../styles/mixin" as *;
 .primaryButton{
     padding: 12px calc(12px + 1rem);
     border-radius: 8px;
@@ -9,11 +10,6 @@
 
 @media (max-width: 720px) {
     .primaryButton{
-
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px; /* 150% */
-        letter-spacing: 0.5px;
+      @include btn-m;
     }
 }

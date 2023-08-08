@@ -9,7 +9,7 @@ interface HeroSectionProps {
 
 const HeroSection: FC<HeroSectionProps> = ({  }) => {
   return (
-    <section className={styles.heroSection}>
+    <section className={styles.heroSection + ' dt-pd'}>
         <div className={styles.heroSection__inner}>
             <div className={styles.heroSection__inner__text}>
                 <div className={styles.heroSection__inner__text__title}>

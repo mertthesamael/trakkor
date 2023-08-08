@@ -1,0 +1,78 @@
+@use "../../styles/mixin" as *;
+.diagramSection{
+   
+display: flex;
+justify-content: center;
+position: relative;
+
+background-color: #4F46E5;
+
+&::after{
+    content: "";
+    position: absolute;
+   width: 100%;
+    height: 50%;
+}
+&::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+   width: 100%;
+    height: 50%;
+    background-color: var(--bgcolor);
+}
+    &__inner{
+
+        width: var(--page-format);
+        display: flex;
+        flex-direction: column;
+       position: relative;
+       z-index: 2;
+        gap: 80px;
+        &__upper{
+            height: 50%;
+            
+            &__title{
+                text-align: center;
+                & h1{
+                    color: white;
+            }
+        }
+    }
+    &__bottom{
+       
+        &__img{
+            width: 100%;
+            height: 840px;
+            position: relative;
+        }
+        
+    }
+}
+}
+
+@media (max-width:720px) {
+    .diagramSection{
+        @include mb-pd;
+       
+        &__inner{
+            gap: 48px;
+            &__upper{
+                
+                &__title{
+                    & h1{
+                        
+                        @include h6;
+                    }
+                }
+            }
+            &__bottom{
+
+                &__img{
+
+                    height: 252px;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-
+@use "../../styles/_mixin.scss" as *;
 
 .heroSection{
 width: 100%;
@@ -9,7 +9,6 @@ display: flex;
 justify-content: center;
 &__inner{
     width: var(--page-format);
-    padding: 80px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,28 +56,29 @@ justify-content: center;
 
 @media (max-width:720px) {
     .heroSection{
+        @include mb-pd;
 
         &__inner{
-            padding: 48px 0;
             gap: 48px;
+            &__logo{
+
+                & img{
+                    width: 240px;
+                    height: 240px;
+                }
+            }
             &__text{
 
                 &__title{
                     & h1{
 
-                        font-size: 48px;
-                        font-style: normal;
-                        font-weight: 800;
-                        line-height: 110%; 
+                        @include h3;  
                     }
                 }
                 &__desc{
 
                     & p{
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 140%; /* 22.4px */
+                        @include bd-m;
                     }
                 }
                 &__buttons{

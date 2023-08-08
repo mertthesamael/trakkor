@@ -1,0 +1,61 @@
+@use "../../styles/mixin" as *;
+.ctaTitleSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__inner{
+        width: var(--page-format);
+        display: flex;
+        &__text{
+            width: 100%;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            gap: 2rem;
+            &__title{
+
+                width: 100%;
+                & h1{
+                    color: white;
+                }
+                & span{
+                    color: var(--accent);
+                }
+            }
+            &__desc{
+                & p{
+                    color: #CBD5E1;
+                }
+            }
+
+        }
+       
+    }
+}
+
+@media (max-width:720px) {
+    .ctaTitleSection{
+        @include mb-pd;
+        &__inner{
+
+            &__text{
+
+                &__title{
+
+                    & h1{
+                        @include h6;
+                    }
+                    & span{
+                        @include h6;
+                    }
+                }
+                &__desc{
+
+                    & p{
+                        @include bd-m;
+                    }
+                }
+            }
+        }
+    }
+}

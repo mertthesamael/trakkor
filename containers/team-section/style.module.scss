@@ -1,0 +1,162 @@
+@use "../../styles/mixin" as *;
+.teamSection{
+
+    display: flex;
+    justify-content: center;
+
+    &__inner{
+        width: var(--page-format);
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        
+        &__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 600px;
+            &__title{
+
+                & h2{
+                    color: white;
+                }   
+                & span{
+                    color: var(--accent);
+                }
+            }
+
+            &__desc{
+
+                & p{
+                    color:#CBD5E1;
+                    line-height: 160%;
+                }
+            }
+        }
+        &__images{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(15, 1fr);
+            gap: 24px;
+            width: 600px;
+            & div{
+                position: relative;
+                border-radius: 15px;
+                overflow: hidden;
+                & img{
+                  
+                }
+            }
+            & div:nth-child(1){
+                grid-column-start: 2;
+                grid-column-end:6;
+                grid-row-start: 1;
+                grid-row-end: 9;
+            }
+            & div:nth-child(2){
+                grid-column-start: 6;
+                grid-column-end: 13;
+                grid-row-start: 1;
+                grid-row-end: 9;
+                
+            }
+            & div:nth-child(3){
+                grid-column-start: 5;
+                grid-column-end: 13;
+                grid-row-start:9;
+                grid-row-end:16;
+
+
+            }
+            & div:nth-child(4){
+                grid-column-start: 1;
+                grid-column-end: 5;
+               
+                grid-row-start:9;
+                grid-row-end:16;
+
+
+            }
+        }
+    }
+
+
+}
+
+
+@media (max-width:1300px) {
+    .teamSection{
+
+        &__inner{
+            flex-wrap: wrap;
+            justify-content: center;
+            &__text{
+                max-width: 100%;
+                text-align: center;
+            }
+            &__images{
+                min-width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 720px) {
+    .teamSection{
+        @include mb-pd;
+
+        &__inner{
+
+            &__text{
+              
+                &__title{
+                    & h2,span{
+
+                        @include h6;
+                    }
+                }
+                &__desc{
+
+                    & p{
+                        @include bd-m;
+                    }
+                }
+
+            }
+            &__images{
+
+                & div:nth-child(1){
+                    grid-column-start: 1;
+                    grid-column-end:6;
+                    grid-row-start: 1;
+                    grid-row-end: 9;
+                }
+                & div:nth-child(2){
+                    grid-column-start: 6;
+                    grid-column-end: 13;
+                    grid-row-start: 1;
+                    grid-row-end: 9;
+                    
+                }
+                & div:nth-child(3){
+                    grid-column-start: 5;
+                    grid-column-end: 13;
+                    grid-row-start:9;
+                    grid-row-end:16;
+    
+    
+                }
+                & div:nth-child(4){
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                   
+                    grid-row-start:9;
+                    grid-row-end:16;
+    
+    
+                }
+            }
+        }
+    }
+}
