@@ -17,7 +17,7 @@ const Header: FC<HeaderProps> = ({  }) => {
                 <h1 className='h5'>trakor</h1>
             </div>
             <nav className={styles.header__inner__nav}>
-                {Navs.map((el, _i) => <Link href={el.href} className='btn-m'>{el.value}</Link>)}
+                {Navs.map((el, _i) => <Link key={_i} href={el.href}  className='btn-m'>{el.value}</Link>)}
             </nav>
             <div className={styles.header__inner__buttons}>
                 <PrimaryButton text='Request more info'/>
