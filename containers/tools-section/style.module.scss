@@ -1,0 +1,129 @@
+@use "../../styles/mixin" as *;
+.toolsSection{
+display: flex;
+justify-content: center;
+    &__inner{
+        width: var(--page-format);
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        &__text{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 600px;
+            &__title{
+                & h1{
+                    color: white;
+                }
+                & span{
+                    color: var(--accent);
+                }
+            }
+            &__desc{
+
+                & p{
+                    color:#CBD5E1;
+                    line-height: 160%;
+                }
+            }
+            &__list{
+                
+                & ul{
+
+                    & li{
+                        color: white;
+                        display: flex;
+                        gap: .5rem;
+                        align-items: center;
+                    }
+                }
+            }
+            &__button{
+
+            }
+        }
+        &__images{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(15, 1fr);
+            gap: 24px;
+            width: 600px;
+
+            & div{
+                position: relative;
+                border-radius: 15px;
+                overflow: hidden;
+            }
+            & div:nth-child(1){
+                grid-column-start: 1;
+                grid-column-end:10;
+                grid-row-start: 1;
+                grid-row-end: 9;
+            }
+            & div:nth-child(2){
+                grid-column-start: 1;
+                grid-column-end:6;
+                grid-row-start: 9;
+                grid-row-end:16;
+            }
+            & div:nth-child(3){
+                grid-column-start: 6;
+                grid-column-end:13;
+                grid-row-start: 9;
+                grid-row-end:16;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:1300px) {
+    .toolsSection{
+
+        &__inner{
+            justify-content: center;
+            flex-direction: column-reverse;
+            &__text{
+                max-width: 100%;
+                text-align: center;
+                padding: 0;
+            }
+            &__images{
+                min-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width:720px) {
+    .toolsSection{
+     @include mb-pd;
+     &__inner{
+
+        &__text{
+
+            &__title{
+                & h1, span{
+                    @include h6;
+                }
+            }
+            &__desc{
+                & p{
+                    @include bd-m;
+                }
+            }
+            &__list{
+
+                & ul{
+
+                    & li{
+                        @include bd-m;
+                    }
+                }
+            }
+        }
+    }
+}
+}

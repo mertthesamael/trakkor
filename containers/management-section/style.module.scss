@@ -1,0 +1,110 @@
+@use "../../styles/mixin" as *;
+.managementSection{
+display: flex;
+justify-content: center;
+    &__inner{
+        width: var(--page-format);
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        &__text{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 600px;
+            &__title{
+                & h1{
+                    color: white;
+                }
+                & span{
+                    color: var(--accent);
+                }
+            }
+            &__desc{
+
+                & p{
+                    color:#CBD5E1;
+                    line-height: 160%;
+                }
+            }
+            &__list{
+                
+                & ul{
+
+                    & li{
+                        color: white;
+                        display: flex;
+                        gap: .5rem;
+                        align-items: center;
+                    }
+                }
+            }
+            &__button{
+
+            }
+        }
+        &__images{
+            display: grid;
+            position: relative;
+            gap: 24px;
+            width: 600px;
+            overflow: hidden;
+            border-radius: 15px;
+
+           
+        }
+    }
+}
+
+
+
+@media (max-width:1300px) {
+    .managementSection{
+
+        &__inner{
+            justify-content: center;
+            flex-direction: column;
+            &__text{
+                max-width: 100%;
+                text-align: center;
+                padding: 0;
+
+            }
+            &__images{
+                min-width: 100%;
+                width: 100%;
+                height: 342px;
+            }
+        }
+    }
+}
+@media (max-width:720px) {
+    .managementSection{
+     @include mb-pd;
+     &__inner{
+
+        &__text{
+
+            &__title{
+                & h1, span{
+                    @include h6;
+                }
+            }
+            &__desc{
+                & p{
+                    @include bd-m;
+                }
+            }
+            &__list{
+
+                & ul{
+
+                    & li{
+                        @include bd-m;
+                    }
+                }
+            }
+        }
+    }
+}
+}
