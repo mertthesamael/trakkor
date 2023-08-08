@@ -6,22 +6,30 @@ export const FooterNavs = [
             {
                 id:1,
                 value:'User Interface',
-                href:'/'
+                href:'/',
+                state:''
+
             },
             {
                 id:2,
                 value:'User Experience',
-                href:'/'
+                href:'/',
+                state:''
+
             },
             {
                 id:3,
                 value:'Digital Media',
-                href:'/'
+                href:'/',
+                state:''
+
             },
             {
                 id:4,
                 value:'Lifestyle',
-                href:'/'
+                href:'/',
+                state:''
+
             },
         ]
     },
@@ -51,7 +59,7 @@ export const FooterNavs = [
                 id:8,
                 value:'Accessibility',
                 href:'/',
-                state:''
+                state:'beta'
             },
         ]
     },
