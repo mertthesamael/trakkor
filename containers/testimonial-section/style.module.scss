@@ -1,0 +1,59 @@
+@use "../../styles/mixin" as *;
+.testimonialSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__inner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        &__text{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            &__title{
+
+                & h1{
+                    color: white;
+                }
+                & span{
+                    color: var(--accent);
+                }
+            }   
+            &__desc{
+
+                & p{
+                    color: #CBD5E1;
+                    line-height: 160%; /* 28.8px */
+                }
+            }
+        }
+        &__slider{
+
+        }
+    }
+}
+@media (max-width:720px) {
+
+    .testimonialSection{
+        @include mb-pd;
+        &__inner{
+
+            &__text{
+
+                &__title{
+                    & h1, span{
+                        @include h6;
+                    }
+                }
+                &__desc{
+                    & p{
+
+                    }
+                }
+            }
+        }
+    }
+}

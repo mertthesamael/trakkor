@@ -1,0 +1,78 @@
+@use "../../../styles/mixin" as *;
+.testimonialSlide{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: max-content;
+    border-radius: 20px;
+    border: 1px solid var(--blue-gray-600, #475569);
+    background: var(--blue-gray-700, #334155);
+
+    /* Shadow/Dark/XL */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07), 0px 20px 25px -5px rgba(0, 0, 0, 0.10);
+
+    
+    &__brand{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding: 1rem 0;
+        & h2{
+            color: #94A3B8;
+        }
+    }
+    &__desc{
+        width: 320px;
+        & p{
+            color: white;
+            line-height: 160%;
+        }
+    }
+    &__author{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        &__img{
+        
+            & img{
+                border-radius: 50%;
+            }
+        }
+        &__info{
+            display: felx;
+            align-items: center;
+            padding: 1rem 0;
+            & h2{
+                color: white;
+            }
+            & span{
+                color:#94A3B8;
+            }
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .testimonialSlide{
+        padding: 1rem;
+        &__brand{
+            & h2{
+               
+            }
+        }
+        &__desc{
+            width: 284px;
+            & p{
+                @include bd-m;
+            }
+        }
+        &__author{
+            padding-top: 1rem;
+            & h2,span{
+                @include bd-m;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@use "../../styles/mixin" as *;
+.bottomCtaSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding-bottom: calc(80px + 80px);
+    &__title{
+
+        & h1{
+            color: white;
+        }
+        & span{
+            color: var(--accent);
+        }
+    }
+    &__desc{
+        & p{
+            color: #CBD5E1;
+        }
+    }
+    &__buttons{
+        display: flex;
+        gap: 1rem;
+        & button{
+            min-width: 256px;
+        }
+    }
+
+}
+
+
+@media (max-width:720px) {
+    .bottomCtaSection{
+        @include mb-pd;
+        &__title{
+            & h1,span{
+                @include h6;
+            }
+        }
+        &__desc{
+            & p{
+                @include bd-m;
+            }
+        }
+        &__buttons{
+
+            & button{
+                min-width: 172px;
+                @include btn-m;
+            }
+        }
+    }
+}

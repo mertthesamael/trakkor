@@ -1,0 +1,38 @@
+.footer{
+    padding-top: 48px;
+    padding-bottom: 24px;
+    background: #334155;
+    display: flex;
+    justify-content: center;
+    &__inner{
+        width: var(--page-format);
+        &__navs{
+            display: flex;
+            gap: 48px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        &__category{
+           
+            & ul{
+                display: flex;
+                flex-direction: column;
+                & h2{
+                    padding: 12px 0;
+                    color: white;
+                }
+                & li{
+                    padding: 12px 0;
+                    & a{
+
+                        text-decoration: none;
+                        color: #E2E8F0;
+                    }
+                }
+            }
+        }
+    }
+    &__banner{
+        
+    }
+}
+}
