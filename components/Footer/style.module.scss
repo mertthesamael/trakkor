@@ -5,6 +5,9 @@
     display: flex;
     justify-content: center;
     &__inner{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
         width: var(--page-format);
         &__navs{
             display: flex;
@@ -32,7 +35,25 @@
         }
     }
     &__banner{
-        
+        width: 100%;
+        display: flex;
+        padding-top: 24px;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-between;
+        &__info{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            & p{
+                color: #E2E8F0;
+            }
+        }
+        &__socials{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
     }
 }
 }

@@ -10,6 +10,9 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Trakkor',
   description: 'Project Tracking System Landing Page | Mert Enercan',
+  openGraph:{
+    images:['https://raw.githubusercontent.com/mertthesamael/trakkor/master/public/logo.png']
+  }
 }
 
 export default function RootLayout({

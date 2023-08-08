@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { FooterNavs } from './constants';
 import styles from './style.module.scss'
 import React, { FC } from 'react'
+import { Facebook, Instagram, LinkedIn, Twitter, YouTube } from '../Icons/Socials';
 
 interface FooterProps {
   
@@ -24,7 +25,19 @@ const Footer: FC<FooterProps> = ({  }) => {
                 ))}
             </div>
             <div className={styles.footer__inner__banner}>
-
+                <div className={styles.footer__inner__banner__info}>
+                    <p className='bd-m'>Made with ♥ by Mert Enercan</p>
+                    <p className='bd-m'>Terms of Service</p>
+                    <p className='bd-m'>Privacy Policy</p>
+                    <p className='bd-m'>Manage Cookies</p>
+                </div>
+                <div className={styles.footer__inner__banner__socials}>
+                    <Facebook />
+                    <Instagram />
+                    <YouTube />
+                    <Twitter />
+                    <LinkedIn />
+                </div>
             </div>
         </div>
     </footer>
