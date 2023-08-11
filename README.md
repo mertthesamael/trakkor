@@ -1,3 +1,6 @@
+![image](https://github.com/mertthesamael/trakkor/assets/79616834/257005a7-6b68-47cf-9781-3d1637c5ff52)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
